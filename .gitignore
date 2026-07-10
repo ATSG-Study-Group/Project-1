@@ -1,0 +1,9 @@
+*.lpz
+*.lpz.hash
+SPLsWork/
+Debug/
+AUTOSAVE/
+*.ASV
+*_compiled.zip
+*.vtz
+*.vtz.hash
