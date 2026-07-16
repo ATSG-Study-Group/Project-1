@@ -1,9 +1,28 @@
+## Crestron Specific files to ignore
+## Temp files, autosave and compled code
+
 *.lpz
 *.lpz.hash
 SPLsWork/
-Debug/
 AUTOSAVE/
+[Oo]utput/
 *.ASV
+*.sm2
+*.um2
+*.sgd2
 *_compiled.zip
 *.vtz
 *.vtz.hash
+
+# SIMPL#  / C# things to ignore
+
+# Build results
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+x64/
+x86/
+bld/
+[Bb]in/
+[Oo]bj/
+[Ll]og/

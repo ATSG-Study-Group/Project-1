@@ -1,0 +1,64 @@
+{
+	"BookList":[
+	{
+		"Title": "Daemon",
+		"Author": "Suarez, Daniel",
+		"Genre": "Science Fiction",
+		"Description": "In a near-future run by thousands of autonomous computer programs, a dormant program activates after a legendary game designer's premature death and launches a sinister effort to dismantle society and enforce a new world order."
+	},
+	{
+		"Title": "Christine",
+		"Author": "King, Stephen",
+		"Genre": "Horror",
+		"Description": "Stephen King's ultimate evil vehicle of terror, Christine: the frightening story of a nerdy teenager who falls in love with his vintage Plymouth Fury. It was love at first sight, but this car is no lady."
+	},
+	{
+		"Title": "The Hitchhiker's Guide to the Galaxy",
+		"Author": "Adams, Douglas",
+		"Genre": "Science Fiction",
+		"Description": "Seconds before the Earth is demolished to make way for a galactic freeway, Arthur Dent is plucked off the planet by his friend Ford Prefect, a researcher for the revised edition of The Hitchhiker's Guide to the Galaxy who, for the last 15 years, has been posing as an out-of-work actor."
+	},
+	{
+		"Title": "Illustrated C# 2008",
+		"Author": "Solis, Daniel",
+		"Genre": "Reference",
+		"Description": "The unique, visual format of Illustrated C# 2008 has been specially created by author, and teacher of development methods, Daniel Solis. The concise text, use of tables to clarify language features, frequent figures and diagrams, as well as focused code samples all combine to create a unique approach that will help you understand and get to work with C# fast."
+	},
+	{
+		"Title": "A Brief History of Time",
+		"Author": "Hawking, Stephen",
+		"Genre": "Science",
+		"Description": "This landmark book is for those of us who prefer words to equations; this is the story of the ultimate quest for knowledge, the ongoing search for the secrets at the heart of time and space. "
+	},
+	{
+		"Title": "Influx",
+		"Author": "Suarez, Daniel",
+		"Genre": "Science Fiction",
+		"Description": "Are smartphones really humanity's most significant innovation since the moon landings? Or can something else explain why the bold visions of the 20th century - fusion power, genetic enhancements, artificial intelligence, cures for common diseases, extended human life, and a host of other world-changing advances - have remained beyond our grasp? Why has the high-tech future that seemed imminent in the 1960s failed to arrive?"
+	},
+	{
+		"Title": "The Girl with the Dragon Tattoo",
+		"Author": "Larson, Stieg",
+		"Genre": "Thriller",
+		"Description": "It’s about the disappearance 40 years ago of Harriet Vanger, a young scion of one of the wealthiest families in Sweden...and about her octogenarian uncle, determined to know the truth about what he believes was her murder. It’s about Mikael Blomkvist, a crusading journalist recently at the wrong end of a libel case, hired to get to the bottom of Harriet’s disappearance...and about Lisbeth Salander, a 24-year-old pierced and tattooed genius hacker possessed of the hard-earned wisdom of someone twice her age who assists Blomkvist with the investigation."
+	},
+	{
+		"Title": "The Adventures of Tom Sawyer",
+		"Author": "Twain, Mark",
+		"Genre": "Adventure",
+		"Description": "The Adventures of Tom Sawyer by Mark Twain is an 1876 novel about a young boy growing up along the Mississippi River. It is set in the 1840 in the fictional town of St. Petersburg, inspired by Hannibal, Missouri, where Twain lived as a boy. In the novel, Tom Sawyer has several adventures, often with his friend Huckleberry Finn. "
+	},
+	{
+		"Title": "On The Road",
+		"Author": "Kerouac, Jack",
+		"Genre": "Autobiographical fiction",
+		"Description": "Few novels have had as profound an impact on American culture as On the Road. Pulsating with the rhythms of 1950s underground America, jazz, sex, illicit drugs, and the mystery and promise of the open road, Kerouac’s classic novel of freedom and longing defined what it meant to be “beat” and has inspired generations of writers, musicians, artists, poets, and seekers who cite their discovery of the book as the event that “set them free”. "
+	},
+	{
+		"Title": "Cosmos",
+		"Author": "Sagan, Carl",
+		"Genre": "Science",
+		"Description": "Cosmos is one of the bestselling science books of all time. In clear-eyed prose, Sagan reveals a jewel-like blue world inhabited by a life form that is just beginning to discover its own identity and to venture into the vast ocean of space. Cosmos retraces the fourteen billion years of cosmic evolution that have transformed matter into consciousness, exploring such topics as the origin of life, the human brain, Egyptian hieroglyphics, spacecraft missions, the death of the Sun, the evolution of galaxies, and the forces and individuals who helped to shape modern science."
+	}	
+	]	
+}
