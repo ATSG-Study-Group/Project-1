@@ -1,0 +1,1 @@
+copy "C:\Users\dave\Development\WorkProjects\ATSG StudyGroup\Project-1\Hello World\Sharp\HelloWorld\bin\Debug\HelloWorld.clz" "C:\Users\dave\Development\WorkProjects\ATSG StudyGroup\Project-1\Hello World\SIMPL"

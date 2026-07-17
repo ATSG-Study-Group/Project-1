@@ -51,7 +51,9 @@ Comments:
 DIGITAL_INPUT SayHello;
 
 // ANALOG_INPUT 
-// STRING_INPUT 
+
+STRING_INPUT CMD[200];
+ 
 // BUFFER_INPUT 
 
 // DIGITAL_OUTPUT 
@@ -69,8 +71,14 @@ DIGITAL_INPUT SayHello;
 // SIGNED_INTEGER
 // SIGNED_LONG_INTEGER
 // STRING
-
+ 
+//create a global varialbe of type Class1 to create an instance of HelloWorld.Class1 for us to use
 Class1 myClass;
+
+change CMD
+{
+	myClass.StringToCSharp(CMD);
+}
 
 push SayHello
 {
