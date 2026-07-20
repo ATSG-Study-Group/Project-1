@@ -12,13 +12,19 @@
 ### Session 2
 - Continue adding to last session's program
 - Discuss mapping of variable types between SIMPL+ and C#
-  - How to access SIMPL# help files
   - Review the table
+- Adding comments and summary blocks
 - Passing data into C# from SIMPL+
   - Scripts to make life easier
   - Add a method that takes in a string as a parameter and prints Hello ____ to console
   - Add a method that takes in two integers as parameters and prints the sum to console
+
+### Session 3
+- How to access SIMPL# help files
 - Passing data from C# back to SIMPL+
   - method return value
   - public properties
   - callback events
+  - callback event args
+  - 
+  
