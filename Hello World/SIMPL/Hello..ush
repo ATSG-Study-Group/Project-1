@@ -20,12 +20,14 @@
   Name=Hello.
   SmplCName=Hello..usp
   Code=1
-  SysRev5=3.083
-  SMWRev=2.02.05
+  SysRev5=3.090
+  SMWRev=3.00.00
   InputCue1=SayHello
   InputSigType1=Digital
   InputList2Cue1=CMD
   InputList2SigType1=Serial
+  OutputList2Cue1=helloMessage
+  OutputList2SigType1=Serial
   ParamCue1=[Reference Name]
   MinVariableInputs=1
   MaxVariableInputs=1
@@ -33,8 +35,8 @@
   MaxVariableInputsList2=1
   MinVariableOutputs=0
   MaxVariableOutputs=0
-  MinVariableOutputsList2=0
-  MaxVariableOutputsList2=0
+  MinVariableOutputsList2=1
+  MaxVariableOutputsList2=1
   MinVariableParams=0
   MaxVariableParams=0
   Expand=expand_separately
