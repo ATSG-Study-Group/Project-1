@@ -24,7 +24,33 @@
 - Passing data from C# back to SIMPL+
   - method return value
   - public properties
-  - callback events
-  - callback event args
-  - 
-  
+
+### Session 4
+- Introduction of the library project
+- Project planning in [Jira](https://thewatchorns.atlassian.net/jira/software/projects/SGP1/boards/67?filter=&groupBy=none)
+
+### Session 5
+- Setting up the Library project so we can get to work
+  - Create a folder structure to organize the work
+  - Import VTPro archive, compile the xpanel
+  - Create the SIMPL windows program
+    - define the xpanel
+    - Create a SIMPL+ module to interface with C#
+  - Create a VS solution and project
+    - create the namespace
+    - Import the NuGet packages
+    - create a SIMPL interface class 
+- Test compile everything
+- Load to a processor and verify that the "shell" program and modules are communicating with the CLZ
+
+### Session 6
+- Build out the SIMPL+ wrapper connection to the xpanel
+- Build a debugging interface
+
+### Session 7
+- Loading the library file into our program
+  - File operations
+  - Create a Book class
+  - Create a catalog collection
+  - Loading the Json file into the collection
+    
