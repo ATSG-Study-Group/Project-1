@@ -47,12 +47,32 @@ Comments:
   DIGITAL, ANALOG and SERIAL INPUTS and OUTPUTS
   (Uncomment and declare inputs and outputs as needed)
 *******************************************************************************************/
-DIGITAL_INPUT Init;
+DIGITAL_INPUT Init, EnableDebug, LoadCatalog, _SKIP_;
+DIGITAL_OUTPUT Initialized, DebugFb,  _SKIP_,  _SKIP_;
+
+
+//-------------- Book Details
+
+STRING_OUTPUT Title, Author, Genre, Description, Status, CheckOutDate, DueBackDate;
+
+DIGITAL_INPUT CheckOutBook, ReturnBook;
+
+//-------------- Reports
+
+STRING_INPUT SearchText[255];
+STRING_OUTPUT SearchTextFb;
+DIGITAL_INPUT CheckedOutReport, OverdueReport, ReportClear;
+
+//-------------- Lists
+
+ANALOG_OUTPUT MainListCount, GenreListCount;
+STRING_OUTPUT MainListText[20], _SKIP_, GenreListText[20];
+ANALOG_INPUT MainListSelect, GenreListSelect;
+
 // ANALOG_INPUT 
 // STRING_INPUT 
 // BUFFER_INPUT 
 
-DIGITAL_OUTPUT Initialized;
 // ANALOG_OUTPUT 
 // STRING_OUTPUT 
 

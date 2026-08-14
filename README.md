@@ -46,9 +46,9 @@
 ### Session 6
 - PowerShell Scripts
 - Build out the SIMPL+ wrapper connection to the xpanel
-- Build a debugging interface
 
 ### Session 7
+- Build a debugging interface
 - Loading the library file into our program
   - File operations
   - Create a Book class
