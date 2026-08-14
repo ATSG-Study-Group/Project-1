@@ -44,6 +44,7 @@
 - Load to a processor and verify that the "shell" program and modules are communicating with the CLZ
 
 ### Session 6
+- PowerShell Scripts
 - Build out the SIMPL+ wrapper connection to the xpanel
 - Build a debugging interface
 
