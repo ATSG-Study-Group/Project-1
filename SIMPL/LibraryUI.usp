@@ -171,12 +171,20 @@ push Init
 }
 
 
-/*
-PUSH input
+PUSH EnableDebug
 {
+	if (myUI.Debug)		//accessing the Debug variable in myUI
+	{
+		myUI.Debug = 0;
+	}
+	else
+	{
+		myUI.Debug = 1;
+	}
     // TODO:  Add code here
+    DebugFb = myUI.Debug;
 }
-*/
+
 
 /*
 RELEASE input

@@ -82,11 +82,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="LibraryCore.cs" />
+    <Compile Include="reports\OverdueReport.cs" />
     <Compile Include="SIMPLLibraryUI.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="game\" />
+    <Folder Include="Infotainment\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="packages\Crestron.SimplSharp.SDK.Library.2.21.274\build\Crestron.SimplSharp.SDK.Library.targets" Condition="Exists('packages\Crestron.SimplSharp.SDK.Library.2.21.274\build\Crestron.SimplSharp.SDK.Library.targets')" />

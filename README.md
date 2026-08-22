@@ -48,10 +48,12 @@
 - Build out the SIMPL+ wrapper connection to the xpanel
 
 ### Session 7
+- Finished up connecting the SIMPL+ wrapper in SIMPL
 - Build a debugging interface
+    
+### Session 8
 - Loading the library file into our program
   - File operations
   - Create a Book class
   - Create a catalog collection
   - Loading the Json file into the collection
-    
