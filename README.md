@@ -52,8 +52,13 @@
 - Build a debugging interface
     
 ### Session 8
-- Loading the library file into our program
+- Tested the debug interface
+- Loading the library file into our program - Part 1
   - File operations
+  - Load the file into the program
+
+### Session 9
+- Loading the library file into our program - Part 2
   - Create a Book class
   - Create a catalog collection
   - Loading the Json file into the collection

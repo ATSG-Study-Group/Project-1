@@ -185,6 +185,17 @@ PUSH EnableDebug
     DebugFb = myUI.Debug;
 }
 
+PUSH LoadCatalog
+{
+	if(myUI.LoadCatalog())
+	{
+		print("Catalog loaded successfully\r");
+	}
+	else
+	{
+		print("Catalog failed to load\r");
+	}
+}
 
 /*
 RELEASE input

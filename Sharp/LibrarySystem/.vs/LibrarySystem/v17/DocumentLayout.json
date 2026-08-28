@@ -17,8 +17,8 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "DockedWidth": 269,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
@@ -28,21 +28,11 @@
               "RelativeDocumentMoniker": "SIMPLLibraryUI.cs",
               "ToolTip": "C:\\Users\\dave\\Development\\WorkProjects\\ATSG StudyGroup\\Project-1\\Sharp\\LibrarySystem\\SIMPLLibraryUI.cs",
               "RelativeToolTip": "SIMPLLibraryUI.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAQwCIAAAAPAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAACoAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-08-07T20:32:11.174Z",
               "EditorCaption": ""
             },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{269a02dc-6af8-11d3-bdc4-00c04f688e50}"
-            }
-          ]
-        },
-        {
-          "DockedWidth": 200,
-          "SelectedChildIndex": 0,
-          "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -51,7 +41,7 @@
               "RelativeDocumentMoniker": "LibraryCore.cs",
               "ToolTip": "C:\\Users\\dave\\Development\\WorkProjects\\ATSG StudyGroup\\Project-1\\Sharp\\LibrarySystem\\LibraryCore.cs",
               "RelativeToolTip": "LibraryCore.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABoAAAAAAAAAAAAowBwAAABcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-08-21T20:45:30.266Z",
               "EditorCaption": ""

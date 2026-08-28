@@ -26,6 +26,24 @@ namespace LibrarySystem
             return 1;
         }
 
+        // load the catalog from file system
+        public ushort LoadCatalog()
+        {
+            if (myCore != null)
+            {
+                // call load catalog
+                myCore.LoadCatalog();
+
+                // test to see if it loaded correctly
+                if (myCore.CatalogLoaded)
+                {
+                    return 1;
+                }
+            }
+            return 0;
+        }
+
+
         //-----------------------------------------
 
         // ushort property Debug that is accessable to SIMPL+
@@ -49,6 +67,8 @@ namespace LibrarySystem
                 {
                     if(value > 0) { myCore.Debug = true; }
                     else { myCore.Debug = false; }
+                    CrestronConsole.PrintLine("Debug is set to {0}", myCore.Debug);
+                    // Console.WriteLine(""); - windows console version - google it for help and ideas
                 }
             }
         }
