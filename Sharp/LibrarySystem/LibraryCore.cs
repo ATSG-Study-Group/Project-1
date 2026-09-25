@@ -4,13 +4,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Crestron.SimplSharp;
-using CrestronSharp;
+//using CrestronSharp;
+using Newtonsoft.Json;
 
 namespace LibrarySystem
 {
     internal class LibraryCore
     {
-
+        private Catalog myCatalog;
 
         // default constructor
         public LibraryCore() 
@@ -48,7 +49,32 @@ namespace LibrarySystem
 
 
             // parse the json into the data structue
+            try
+            {
+                // calling newtonsoft to parse the json file into an instance of Catalog
+                myCatalog =  JsonConvert.DeserializeObject<Catalog>(myFileOperations.Content);
 
+                if (myCatalog == null) //failed to parse correctly
+                {
+                    catalogLoaded = false;
+                    ErrorLog.Warn("Unable to parse catalog file.");
+                    return;
+                }
+
+                if (Debug)
+                {
+                    CrestronConsole.PrintLine("Catalog Loaded!");
+                    myCatalog.PrintCatalog();
+                }
+
+            }
+            catch (Exception e)
+            {
+                // C# 101 way of handling an exception
+                catalogLoaded = false;
+                ErrorLog.Error("Exception thrown while parsing catalog.json: {0}", e.Message);
+                return;
+            }
 
 
             // If we make it all the way here, set catalogLoaded

@@ -33,6 +33,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>packages\Newtonsoft.Json.13.0.4\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="SimplSharpAutoUpdateInterface, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1099c178b3b54c3b, processorArchitecture=MSIL">
       <HintPath>packages\Crestron.SimplSharp.SDK.Library.2.21.274\lib\net47\SimplSharpAutoUpdateInterface.dll</HintPath>
     </Reference>
@@ -53,9 +56,6 @@
     </Reference>
     <Reference Include="SimplSharpHelperInterface, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1099c178b3b54c3b, processorArchitecture=MSIL">
       <HintPath>packages\Crestron.SimplSharp.SDK.Library.2.21.274\lib\net47\SimplSharpHelperInterface.dll</HintPath>
-    </Reference>
-    <Reference Include="SimplSharpNewtonsoft, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1099c178b3b54c3b, processorArchitecture=MSIL">
-      <HintPath>packages\Crestron.SimplSharp.SDK.Library.2.21.274\lib\net47\SimplSharpNewtonsoft.dll</HintPath>
     </Reference>
     <Reference Include="SimplSharpOnvifInterface, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1099c178b3b54c3b, processorArchitecture=MSIL">
       <HintPath>packages\Crestron.SimplSharp.SDK.Library.2.21.274\lib\net47\SimplSharpOnvifInterface.dll</HintPath>
@@ -82,6 +82,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Book.cs" />
+    <Compile Include="Catalog.cs" />
     <Compile Include="FileOperations.cs" />
     <Compile Include="LibraryCore.cs" />
     <Compile Include="reports\OverdueReport.cs" />

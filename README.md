@@ -62,3 +62,7 @@
   - Create a Book class
   - Create a catalog collection
   - Loading the Json file into the collection
+
+### Session 10
+- Display the contents of the catalog on the touch panel UI
+  

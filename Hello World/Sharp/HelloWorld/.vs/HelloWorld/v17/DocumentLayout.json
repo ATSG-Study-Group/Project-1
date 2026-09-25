@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\dave\\Development\\WorkProjects\\ATSG StudyGroup\\Project-1\\Hello World\\Sharp\\HelloWorld\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{88F4BB1A-0ED6-429F-AED0-CA3D839AB024}|HelloWorld.csproj|c:\\users\\dave\\development\\workprojects\\atsg studygroup\\project-1\\hello world\\sharp\\helloworld\\class2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{88F4BB1A-0ED6-429F-AED0-CA3D839AB024}|HelloWorld.csproj|solutionrelative:class2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{88F4BB1A-0ED6-429F-AED0-CA3D839AB024}|HelloWorld.csproj|c:\\users\\dave\\development\\workprojects\\atsg studygroup\\project-1\\hello world\\sharp\\helloworld\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{88F4BB1A-0ED6-429F-AED0-CA3D839AB024}|HelloWorld.csproj|solutionrelative:class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
@@ -19,12 +23,25 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Class2.cs",
+              "DocumentMoniker": "C:\\Users\\dave\\Development\\WorkProjects\\ATSG StudyGroup\\Project-1\\Hello World\\Sharp\\HelloWorld\\Class2.cs",
+              "RelativeDocumentMoniker": "Class2.cs",
+              "ToolTip": "C:\\Users\\dave\\Development\\WorkProjects\\ATSG StudyGroup\\Project-1\\Hello World\\Sharp\\HelloWorld\\Class2.cs*",
+              "RelativeToolTip": "Class2.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-29T00:00:33.841Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "Class1.cs",
               "DocumentMoniker": "C:\\Users\\dave\\Development\\WorkProjects\\ATSG StudyGroup\\Project-1\\Hello World\\Sharp\\HelloWorld\\Class1.cs",
               "RelativeDocumentMoniker": "Class1.cs",
               "ToolTip": "C:\\Users\\dave\\Development\\WorkProjects\\ATSG StudyGroup\\Project-1\\Hello World\\Sharp\\HelloWorld\\Class1.cs",
               "RelativeToolTip": "Class1.cs",
-              "ViewState": "AgIAAEsAAAAAAAAAAAAIwGwAAAAfAAAAAAAAAA==",
+              "ViewState": "AgIAAEAAAAAAAAAAAAAwwGwAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-07-10T21:08:45.669Z",
               "EditorCaption": ""
