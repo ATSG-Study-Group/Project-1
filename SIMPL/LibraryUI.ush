@@ -20,8 +20,8 @@
   Name=LibraryUI
   SmplCName=LibraryUI.usp
   Code=1
-  SysRev5=3.083
-  SMWRev=2.02.05
+  SysRev5=3.090
+  SMWRev=3.00.00
   InputCue1=Init
   InputSigType1=Digital
   InputCue2=EnableDebug

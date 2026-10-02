@@ -211,24 +211,41 @@ CHANGE input
 }
 */
 
+callback function _ListUpdateCallback(integer count)
+// function is called from C#, C# sends back the number of lines of data to be displayed
+{
+	integer i;
+	
+	MainListCount = count;
+	
+	if (count = 0) return;
+
+	for (i = 1 to count)
+	{
+		MainListText[i] = myUI.GetListLine(i);  //calls the method GetListLine to get the indirect text for the display list line
+	}
+}
+
 
 /*******************************************************************************************
   Main()
   Uncomment and place one-time startup code here
   (This code will get called when the system starts up)
 *******************************************************************************************/
-/*
+
 Function Main()
 {
     // TODO:  Add code here
     // Initialize declared global and local variables/arrays as needed.
 
-    // WaitForInitializationComplete();
+    WaitForInitializationComplete();
     // If you are reading any Input or Output variables, uncomment
     //   the WaitForInitializationComplete statement above and read
     //   them afterwards.  Input/Output variables will not have
     //   their correct values set until after the logic processor
     //   runs and propagates the values to them.
+    
+    registerdelegate(myUI, ListUpdateCallback, _ListUpdateCallback);
+    
 }
-*/
 

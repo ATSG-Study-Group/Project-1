@@ -81,6 +81,20 @@ namespace LibrarySystem
             catalogLoaded = true;
         }
 
+        /// <summary>
+        /// method that returns a list containing the entire catalog
+        /// </summary>
+        /// <returns>the list of books in the catalog</returns>
+        public List<Book> GetCatalog()
+        {
+            if (catalogLoaded)
+                return myCatalog.BookList.ToList();  //creating a new list from the master list and returning that.
+            else
+            {
+                ErrorLog.Warn("GetCatalog called before the catalog was loaded.");
+                return null;    // if catalog is not loaded, still need to return something, in this case we return a null.
+            }
+        }
 
         //--------------------------------------------------------------
 

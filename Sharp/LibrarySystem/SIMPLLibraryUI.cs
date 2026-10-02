@@ -8,15 +8,53 @@ using CrestronSharp;
 
 namespace LibrarySystem
 {
+    /// <summary>
+    /// Delegate to let simpl+ know when we the display list has been updated
+    /// </summary>
+    /// <param name="bookCount">how many books are in the new list</param>
+    public delegate void ListUpdateDelegate(ushort bookCount);
+
     // Class to function as our interface between C# and SIMPL+
     public class SIMPLLibraryUI
     {
         // crate a variable to refrence the library core.
         LibraryCore myCore;
 
+        // list of books to be displayed on the UI
+        private List<Book> displayList;
+
         // the default constructor for the class -- SIMPL+ can only call the default constructor
         public SIMPLLibraryUI() 
         { 
+        }
+
+        /// <summary>
+        /// callback to regiser for list Updates
+        /// </summary>
+        public ListUpdateDelegate ListUpdateCallback { get; set; }
+
+        /// <summary>
+        /// gets the data to be displayed on an individual line of the display list
+        /// </summary>
+        /// <param name="index">index of the line to display</param>
+        /// <returns>the data to display</returns>
+        public SimplSharpString GetListLine(ushort index)
+        {
+            // validate displayList
+            if (displayList != null)
+            {
+                // validate index
+                if ((index > 0) && (index <= displayList.Count))
+                {
+                    // build our response
+                    // String.Format allows you to creat a string and apply formatting similar to a print statement
+                    string s = String.Format("{0}\n{1}", displayList[index-1].Title, displayList[index-1].Author);  // C# is 0 based indexes
+
+                    // return the response
+                    return new SimplSharpString(s);  // remember SIMPL+ uses a different string format than C#
+                }
+            }
+            return "";
         }
 
         // initialization logic goes here
@@ -37,6 +75,11 @@ namespace LibrarySystem
                 // test to see if it loaded correctly
                 if (myCore.CatalogLoaded)
                 {
+                    displayList = myCore.GetCatalog();  //load the complete catalog into the display list
+                    if ((displayList != null) && (ListUpdateCallback != null)) // check to confirm there is data in the display list and that someone is listening
+                    {
+                        ListUpdateCallback((ushort)displayList.Count);   // (ushort) is a cast to tell the compiler to treat the int value as a ushort
+                    }
                     return 1;
                 }
             }

@@ -65,4 +65,7 @@
 
 ### Session 10
 - Display the contents of the catalog on the touch panel UI
+
+### Session 11
+- Sorting the list
   
