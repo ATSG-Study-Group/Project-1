@@ -7,16 +7,16 @@
       "RelativeMoniker": "D:0:0:{105A114B-6DAB-4FF8-9954-6F2013CA26FE}|LibrarySystem.csproj|solutionrelative:simpllibraryui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{105A114B-6DAB-4FF8-9954-6F2013CA26FE}|LibrarySystem.csproj|c:\\users\\dave\\development\\workprojects\\atsg studygroup\\project-1\\sharp\\librarysystem\\librarycore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{105A114B-6DAB-4FF8-9954-6F2013CA26FE}|LibrarySystem.csproj|c:\\users\\dave\\development\\workprojects\\atsg studygroup\\project-1\\sharp\\librarysystem\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{105A114B-6DAB-4FF8-9954-6F2013CA26FE}|LibrarySystem.csproj|solutionrelative:book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{105A114B-6DAB-4FF8-9954-6F2013CA26FE}|LibrarySystem.csproj|C:\\Users\\dave\\Development\\WorkProjects\\ATSG StudyGroup\\Project-1\\Sharp\\LibrarySystem\\librarycore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{105A114B-6DAB-4FF8-9954-6F2013CA26FE}|LibrarySystem.csproj|solutionrelative:librarycore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{105A114B-6DAB-4FF8-9954-6F2013CA26FE}|LibrarySystem.csproj|C:\\Users\\dave\\Development\\WorkProjects\\ATSG StudyGroup\\Project-1\\Sharp\\LibrarySystem\\catalog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{105A114B-6DAB-4FF8-9954-6F2013CA26FE}|LibrarySystem.csproj|solutionrelative:catalog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{105A114B-6DAB-4FF8-9954-6F2013CA26FE}|LibrarySystem.csproj|C:\\Users\\dave\\Development\\WorkProjects\\ATSG StudyGroup\\Project-1\\Sharp\\LibrarySystem\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{105A114B-6DAB-4FF8-9954-6F2013CA26FE}|LibrarySystem.csproj|solutionrelative:book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,19 +30,20 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "Book.cs",
               "DocumentMoniker": "C:\\Users\\dave\\Development\\WorkProjects\\ATSG StudyGroup\\Project-1\\Sharp\\LibrarySystem\\Book.cs",
               "RelativeDocumentMoniker": "Book.cs",
               "ToolTip": "C:\\Users\\dave\\Development\\WorkProjects\\ATSG StudyGroup\\Project-1\\Sharp\\LibrarySystem\\Book.cs",
               "RelativeToolTip": "Book.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAuAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-25T21:18:01.899Z"
+              "WhenOpened": "2026-09-25T21:18:01.899Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Catalog.cs",
               "DocumentMoniker": "C:\\Users\\dave\\Development\\WorkProjects\\ATSG StudyGroup\\Project-1\\Sharp\\LibrarySystem\\Catalog.cs",
               "RelativeDocumentMoniker": "Catalog.cs",
@@ -60,23 +61,22 @@
               "RelativeDocumentMoniker": "SIMPLLibraryUI.cs",
               "ToolTip": "C:\\Users\\dave\\Development\\WorkProjects\\ATSG StudyGroup\\Project-1\\Sharp\\LibrarySystem\\SIMPLLibraryUI.cs",
               "RelativeToolTip": "SIMPLLibraryUI.cs",
-              "ViewState": "AgIAABcAAAAAAAAAAAAQwDEAAABzAAAAAAAAAA==",
+              "ViewState": "AgIAADkAAAAAAAAAAAAuwFYAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-08-07T20:32:11.174Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "LibraryCore.cs",
               "DocumentMoniker": "C:\\Users\\dave\\Development\\WorkProjects\\ATSG StudyGroup\\Project-1\\Sharp\\LibrarySystem\\LibraryCore.cs",
               "RelativeDocumentMoniker": "LibraryCore.cs",
               "ToolTip": "C:\\Users\\dave\\Development\\WorkProjects\\ATSG StudyGroup\\Project-1\\Sharp\\LibrarySystem\\LibraryCore.cs",
               "RelativeToolTip": "LibraryCore.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAAF8AAAANAAAAAAAAAA==",
+              "ViewState": "AgIAAGgAAAAAAAAAAADwv4AAAABJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-21T20:45:30.266Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-08-21T20:45:30.266Z"
             }
           ]
         }

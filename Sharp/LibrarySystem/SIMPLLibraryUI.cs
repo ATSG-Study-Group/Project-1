@@ -75,7 +75,8 @@ namespace LibrarySystem
                 // test to see if it loaded correctly
                 if (myCore.CatalogLoaded)
                 {
-                    displayList = myCore.GetCatalog();  //load the complete catalog into the display list
+                    //displayList = myCore.GetCatalog();
+                    displayList = myCore.GetCatalog(LibraryCore.SortType.Author);  //load the complete catalog into the display list
                     if ((displayList != null) && (ListUpdateCallback != null)) // check to confirm there is data in the display list and that someone is listening
                     {
                         ListUpdateCallback((ushort)displayList.Count);   // (ushort) is a cast to tell the compiler to treat the int value as a ushort

@@ -10,12 +10,22 @@ namespace LibrarySystem
     /// <summary>
     /// Contains all the properites of a book, from the catalog.json file
     /// </summary>
-    internal class Book
+    internal class Book : IComparable<Book> //interface that implements comparisons
     {
         public string Title { get; set; }
         public string Author { get; set; }
         public string Genre { get; set; }
         public string Description { get; set; }
+
+        /// <summary>
+        /// defines the default CompareTo behavior for a book
+        /// </summary>
+        /// <param name="other">the other book to compare against</param>
+        /// <returns>either -1, 0, or 1</returns>
+        public int CompareTo(Book other)  //default comparison function between two books
+        {
+            return this.Author.CompareTo(other.Author);
+        }
 
         /// <summary>
         /// Prints the details about a book to console
@@ -28,5 +38,7 @@ namespace LibrarySystem
             CrestronConsole.PrintLine(" Description: {0}", Description);
             CrestronConsole.PrintLine("");
         }
+
+        
     }
 }

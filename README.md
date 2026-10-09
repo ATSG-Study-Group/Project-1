@@ -68,4 +68,7 @@
 
 ### Session 11
 - Sorting the list
+
+### Session 12
+- Genre List
   
