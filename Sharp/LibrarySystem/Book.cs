@@ -22,9 +22,14 @@ namespace LibrarySystem
         /// </summary>
         /// <param name="other">the other book to compare against</param>
         /// <returns>either -1, 0, or 1</returns>
-        public int CompareTo(Book other)  //default comparison function between two books
+        public int CompareTo(Book other)  //default comparison function between two books compare author name
         {
-            return this.Author.CompareTo(other.Author);
+            int result = this.Author.CompareTo(other.Author);
+            if (result == 0) // Author is the same for both books
+            { 
+                result = this.Title.CompareTo(other.Title); // if author is the same, compare the titles
+            }
+            return result;
         }
 
         /// <summary>

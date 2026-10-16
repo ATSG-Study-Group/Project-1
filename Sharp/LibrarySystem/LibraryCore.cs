@@ -112,20 +112,20 @@ namespace LibrarySystem
         public List<Book> GetCatalog(SortType sortBy)
         {
             List<Book> books = GetCatalog();    //creates a new list of books from the catalog, or null if not available
-            CrestronConsole.PrintLine("made my copy");
+            //CrestronConsole.PrintLine("made my copy");
             if (books != null)  // check to make sure books contains books
             {
-                CrestronConsole.PrintLine("made it to the switch");
+                //CrestronConsole.PrintLine("made it to the switch");
                 switch (sortBy)
                 {
                     case SortType.Author:
-                        CrestronConsole.PrintLine("sort by author");
-                        // sort uses a lambda function to define how to compare two books for the sort 
-                        // for this example we are using two books x and y  then the lambda operator => followed by logic that does the comparison of x and y
-                        // this is shorthand for a method: private int compare (book x, book y) that returns -1 if x < y, 0 if they are the same, and 1 if x > y
+                        //CrestronConsole.PrintLine("sort by author");
                         books.Sort();  //uses the default CompareTo for book
                         break;
                     case SortType.Title:
+                        // sort uses a lambda function to define how to compare two books for the sort 
+                        // for this example we are using two books x and y  then the lambda operator => followed by logic that does the comparison of x and y
+                        // this is shorthand for a method: private int compare (book x, book y) that returns -1 if x < y, 0 if they are the same, and 1 if x > y
                         books.Sort((x,y) => x.Title.CompareTo(y.Title)); 
                         break;
                     case SortType.Genre:
