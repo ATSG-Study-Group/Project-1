@@ -70,5 +70,8 @@
 - Sorting the list
 
 ### Session 12
+- Populate the book pop-up window
+
+### Session 13
 - Genre List
   

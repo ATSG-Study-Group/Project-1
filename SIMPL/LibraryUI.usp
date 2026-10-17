@@ -197,19 +197,21 @@ PUSH LoadCatalog
 	}
 }
 
-/*
-RELEASE input
-{
-    // TODO:  Add code here
-}
-*/
 
-/*
-CHANGE input
+CHANGE MainListSelect
 {
-    // TODO:  Add code here
+	// get the details about the book at a specific line in the list
+	myUI.SelectBook(MainListSelect);
 }
-*/
+
+callback function _SelectedBookCallback(BookArgs args)
+{
+	Title = args.Title;
+	Author = args.Author;
+	Genre = args.Genre;
+	Description = args.Description;
+}
+
 
 callback function _ListUpdateCallback(integer count)
 // function is called from C#, C# sends back the number of lines of data to be displayed
@@ -246,6 +248,7 @@ Function Main()
     //   runs and propagates the values to them.
     
     registerdelegate(myUI, ListUpdateCallback, _ListUpdateCallback);
+    registerdelegate(myUI, SelectedBookCallback, _SelectedBookCallback);
     
 }
 

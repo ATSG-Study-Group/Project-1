@@ -14,6 +14,13 @@ namespace LibrarySystem
     /// <param name="bookCount">how many books are in the new list</param>
     public delegate void ListUpdateDelegate(ushort bookCount);
 
+
+    /// <summary>
+    /// Delegate to pass the details about a book back to SIMPL+
+    /// </summary>
+    /// <param name="SelectedBookArgs">the details about the book</param>
+    public delegate void SelectedBookDelegate(BookArgs SelectedBookArgs);
+
     // Class to function as our interface between C# and SIMPL+
     public class SIMPLLibraryUI
     {
@@ -22,6 +29,8 @@ namespace LibrarySystem
 
         // list of books to be displayed on the UI
         private List<Book> displayList;
+
+        private Book myBook;
 
         // the default constructor for the class -- SIMPL+ can only call the default constructor
         public SIMPLLibraryUI() 
@@ -32,6 +41,11 @@ namespace LibrarySystem
         /// callback to regiser for list Updates
         /// </summary>
         public ListUpdateDelegate ListUpdateCallback { get; set; }
+
+        /// <summary>
+        /// callback to register to for book updates
+        /// </summary>
+        public SelectedBookDelegate SelectedBookCallback { get; set; }
 
         /// <summary>
         /// gets the data to be displayed on an individual line of the display list
@@ -55,6 +69,37 @@ namespace LibrarySystem
                 }
             }
             return "";
+        }
+
+        /// <summary>
+        /// Select a specific book from the list
+        /// </summary>
+        /// <param name="index">index of the book to select</param>
+        public void SelectBook(ushort index)
+        {
+            // check to make sure the list exists
+            if (displayList != null)
+            {
+                // check to make sure index points to a valid book
+                if ((index > 0) && (index <= displayList.Count))
+                {
+                    // set myBook to the book at index
+                    myBook = displayList[index - 1]; // remember arrays in C# are 0 based index
+                }
+                else 
+                    myBook = null;  // if the code block is a single line, C# will imply the { }
+                
+            }
+            else { myBook = null; }  // for single line code blocks, you can put it all on one line
+
+            // return the details about the book to SIMPL+
+            if (SelectedBookCallback != null)
+            {
+                SelectedBookCallback(new BookArgs(myBook));  // because all I'm using bookargs for is to pass it to SlectectedBookCallback,
+                                                             // I'm not creating a BookArgs variable, I'm crating new BookArgs and passing it right in 
+                                                             // to SelectedBookCallback
+            }
+
         }
 
         // initialization logic goes here

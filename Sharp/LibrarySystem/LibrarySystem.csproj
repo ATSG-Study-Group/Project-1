@@ -83,6 +83,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Book.cs" />
+    <Compile Include="BookArgs.cs" />
     <Compile Include="Catalog.cs" />
     <Compile Include="FileOperations.cs" />
     <Compile Include="LibraryCore.cs" />
