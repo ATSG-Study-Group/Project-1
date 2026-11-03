@@ -136,6 +136,31 @@ namespace LibrarySystem
             return books;
         }
 
+        /// <summary>
+        /// Search the catalog for a specific keyword
+        /// </summary>
+        /// <param name="keyword">The keyword to search for</param>
+        /// <returns>A list of books that contain the keyword</returns>
+        public List<Book> SearchKeyword(string keyword)
+        { 
+            List<Book> tempList = new List<Book>();
+
+            if (CatalogLoaded)  // quick test to make sure the catalog is loaded and we have data to work with
+            {
+                foreach (Book b in myCatalog.BookList)  // foreach will loop through the entire catalog list, setting b to each individual book as it loops
+                {
+                    if (b.SearchMatch(keyword)) tempList.Add(b);    //if b is a match for keyword, adds it to out results list.
+                }
+
+            }
+            else 
+            {
+                ErrorLog.Warn("Attempted to search the catalog before it was loaded.");
+            }
+
+            return tempList;
+        }
+
         //--------------------------------------------------------------
 
         /// <summary>

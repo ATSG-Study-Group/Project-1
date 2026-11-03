@@ -204,6 +204,15 @@ CHANGE MainListSelect
 	myUI.SelectBook(MainListSelect);
 }
 
+
+CHANGE SearchText
+{
+	SearchTextFb = SearchText;
+	myUI.SearchKeyword(SearchText);
+
+}
+
+
 callback function _SelectedBookCallback(BookArgs args)
 {
 	Title = args.Title;
@@ -220,11 +229,18 @@ callback function _ListUpdateCallback(integer count)
 	
 	MainListCount = count;
 	
-	if (count = 0) return;
+	//if (count = 0) return;
 
-	for (i = 1 to count)
+	for (i = 1 to 20)	// need to handle clearing out data from unused lines
 	{
-		MainListText[i] = myUI.GetListLine(i);  //calls the method GetListLine to get the indirect text for the display list line
+		if (i <= count)
+		{
+			MainListText[i] = myUI.GetListLine(i);  //calls the method GetListLine to get the indirect text for the display list line
+		}
+		else
+		{
+			MainListText[i] = "";
+		}
 	}
 }
 

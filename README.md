@@ -73,5 +73,8 @@
 - Populate the book pop-up window
 
 ### Session 13
+- Keyword search
+
+### Session 14
 - Genre List
   

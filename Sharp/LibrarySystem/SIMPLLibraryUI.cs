@@ -8,6 +8,19 @@ using CrestronSharp;
 
 namespace LibrarySystem
 {
+    /*  The "correct" way to organize code in a C# class
+     *  
+     *  Fields
+     *  Constructors
+     *  Events
+     *  Properties
+     *  Public Methods
+     *  Private Methods
+     *  
+     *  Within each of those sections, things should be alphabetized by name
+     */
+
+
     /// <summary>
     /// Delegate to let simpl+ know when we the display list has been updated
     /// </summary>
@@ -69,6 +82,25 @@ namespace LibrarySystem
                 }
             }
             return "";
+        }
+
+        /// <summary>
+        /// search the library catalog for a specific keyword
+        /// </summary>
+        /// <param name="Keyword">the keyword to search for</param>
+        public void SearchKeyword(SimplSharpString Keyword)
+        {
+            if (myCore.CatalogLoaded)
+            {
+                displayList = myCore.SearchKeyword(Keyword.ToString()); // will return a list of all matches, set the Display list to it.
+
+                if ((displayList != null) && (ListUpdateCallback != null)) // check to confirm there is data in the display list and that someone is listening
+                {
+                    ListUpdateCallback((ushort)displayList.Count);   // (ushort) is a cast to tell the compiler to treat the int value as a ushort
+                }
+
+            }
+        
         }
 
         /// <summary>

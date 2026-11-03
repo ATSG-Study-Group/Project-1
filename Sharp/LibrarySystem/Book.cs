@@ -18,6 +18,20 @@ namespace LibrarySystem
         public string Description { get; set; }
 
         /// <summary>
+        /// Test to see if the Title or Author contains the search string
+        /// </summary>
+        /// <param name="MatchValue">String to compare against</param>
+        /// <returns>true if match</returns>
+        public bool SearchMatch(string MatchValue)
+        {
+            if (Title.ToLower().Contains(MatchValue.ToLower()) || Author.ToLower().Contains(MatchValue.ToLower()))   // Converting everything to lower so that capitalization is ignored
+                return true;
+            else
+                return false;
+        
+        }
+
+        /// <summary>
         /// defines the default CompareTo behavior for a book
         /// </summary>
         /// <param name="other">the other book to compare against</param>
